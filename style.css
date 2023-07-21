@@ -52,3 +52,28 @@ h6 {
   padding: 0;
   position: absolute;
 }
+
+/* Full Width Container */
+.max-width-wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 1px dotted peru;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nav__logo {
+  margin-right: auto;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
