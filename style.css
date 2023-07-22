@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
 
   color: white;
-  background-color: hsl(218, 28%, 13%);
+  background-color: hsl(217, 28%, 15%);
 }
 img,
 picture,
@@ -58,7 +58,7 @@ h6 {
   max-width: 75rem;
   margin: 0 auto;
   padding: 0 1rem;
-  border: 1px dotted peru;
+  /* border: 1px dotted peru; */
 }
 
 /* NAVBAR */
@@ -80,13 +80,17 @@ h6 {
 
 /* HEADER */
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 4rem;
+  background-color: transparent;
 }
-.hero__image {
+.header::after {
+}
+.header .hero__image {
   margin-bottom: 2rem;
 }
 .hero-heading {
@@ -97,4 +101,33 @@ h6 {
   max-width: 50ch;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+/* FEATURES */
+.features {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.feature__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.feature__box .feature__image {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.feature__box p {
+  text-align: center;
+  font-size: 0.875rem;
+  max-width: 40ch;
 }
